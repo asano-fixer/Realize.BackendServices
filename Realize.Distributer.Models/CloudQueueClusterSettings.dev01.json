@@ -1,0 +1,115 @@
+﻿[
+  {
+    "Name": "GvGTeamMatchingEntry",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=drzeserverappst;AccountKey=e9QF9RLTssfZ6Kr1GC/oeKOgFyMNSPUhCxE9jirvRW3XntFAjMxaShgROCGcSMazeHWbj111BNHgidzbAHg/MQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvGTeamMatchingEntry01",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=drzeserverappst;AccountKey=e9QF9RLTssfZ6Kr1GC/oeKOgFyMNSPUhCxE9jirvRW3XntFAjMxaShgROCGcSMazeHWbj111BNHgidzbAHg/MQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvGTeamMatchingEntry02",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      }
+    ]
+  },
+  {
+    "Name": "GvGWholePublishing",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=drzeserverappst;AccountKey=e9QF9RLTssfZ6Kr1GC/oeKOgFyMNSPUhCxE9jirvRW3XntFAjMxaShgROCGcSMazeHWbj111BNHgidzbAHg/MQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvGWholePublishing01",
+        "NextClusterName": "GvGReady",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=drzeserverappst;AccountKey=e9QF9RLTssfZ6Kr1GC/oeKOgFyMNSPUhCxE9jirvRW3XntFAjMxaShgROCGcSMazeHWbj111BNHgidzbAHg/MQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvGWholePublishing02",
+        "NextClusterName": "GvGReady",
+        "DeleteClusterName": ""
+      }
+    ]
+  },
+  {
+    "Name": "GvGReady",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=drzeserverappst;AccountKey=e9QF9RLTssfZ6Kr1GC/oeKOgFyMNSPUhCxE9jirvRW3XntFAjMxaShgROCGcSMazeHWbj111BNHgidzbAHg/MQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvGReady01",
+        "NextClusterName": "",
+        "DeleteClusterName": "GvGReadyCompleted"
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=drzeserverappst;AccountKey=e9QF9RLTssfZ6Kr1GC/oeKOgFyMNSPUhCxE9jirvRW3XntFAjMxaShgROCGcSMazeHWbj111BNHgidzbAHg/MQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvGReady02",
+        "NextClusterName": "",
+        "DeleteClusterName": "GvGReadyCompleted"
+      }
+    ]
+  },
+  {
+    "Name": "GvGReadyCompleted",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=drzeserverappst;AccountKey=e9QF9RLTssfZ6Kr1GC/oeKOgFyMNSPUhCxE9jirvRW3XntFAjMxaShgROCGcSMazeHWbj111BNHgidzbAHg/MQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvGReadyCompleted01",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      }
+    ]
+  },
+  {
+    "Name": "GvETeamMatchingEntry",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=drzeserverappst;AccountKey=e9QF9RLTssfZ6Kr1GC/oeKOgFyMNSPUhCxE9jirvRW3XntFAjMxaShgROCGcSMazeHWbj111BNHgidzbAHg/MQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvETeamMatchingEntry01",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=drzeserverappst;AccountKey=e9QF9RLTssfZ6Kr1GC/oeKOgFyMNSPUhCxE9jirvRW3XntFAjMxaShgROCGcSMazeHWbj111BNHgidzbAHg/MQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvETeamMatchingEntry02",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      }
+    ]
+  },
+  {
+    "Name": "GvEWholePublishing",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=drzeserverappst;AccountKey=e9QF9RLTssfZ6Kr1GC/oeKOgFyMNSPUhCxE9jirvRW3XntFAjMxaShgROCGcSMazeHWbj111BNHgidzbAHg/MQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvEWholePublishing01",
+        "NextClusterName": "GvEReady",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=drzeserverappst;AccountKey=e9QF9RLTssfZ6Kr1GC/oeKOgFyMNSPUhCxE9jirvRW3XntFAjMxaShgROCGcSMazeHWbj111BNHgidzbAHg/MQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvEWholePublishing02",
+        "NextClusterName": "GvEReady",
+        "DeleteClusterName": ""
+      }
+    ]
+  },
+  {
+    "Name": "GvEReady",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=drzeserverappst;AccountKey=e9QF9RLTssfZ6Kr1GC/oeKOgFyMNSPUhCxE9jirvRW3XntFAjMxaShgROCGcSMazeHWbj111BNHgidzbAHg/MQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvEReady01",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=drzeserverappst;AccountKey=e9QF9RLTssfZ6Kr1GC/oeKOgFyMNSPUhCxE9jirvRW3XntFAjMxaShgROCGcSMazeHWbj111BNHgidzbAHg/MQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvEReady02",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      }
+    ]
+  }
+]

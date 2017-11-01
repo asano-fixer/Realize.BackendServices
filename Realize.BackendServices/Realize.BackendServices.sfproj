@@ -33,6 +33,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Realize.BackendServices.Api\Realize.BackendServices.Api.csproj" />
+    <ProjectReference Include="..\Realize.BackendServices.BatchManager\Realize.BackendServices.BatchManager.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>

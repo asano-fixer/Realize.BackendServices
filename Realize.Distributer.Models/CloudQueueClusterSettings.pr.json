@@ -1,0 +1,247 @@
+﻿[
+  {
+    "Name": "GvGTeamMatchingEntry",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0101;AccountKey=WkJ3dVBb+/Cw2al5whU87kCJIXqWwfNbcy/La1Fr4pe/koG9ecGpYrZem+xCFAvyr/gwPFAYosOT8TwiJPpJ0A==;EndpointSuffix=core.windows.net",
+        "Name": "GvGTeamMatchingEntry01",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0102;AccountKey=1FZT3CUjGP1elUgZuhPs+H5ZbhGP8+k0C8f+M2BbN/+xJUFRVgYRoBG3MqPQp3k9MYlwt1OHcsrVsYnngoBMIA==;EndpointSuffix=core.windows.net",
+        "Name": "GvGTeamMatchingEntry02",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0103;AccountKey=DQaSyNCwGvqMyJ757yzOnT4y5b8J592QiWR9mUCtjsML0qm2YbUcqBe64JwOzaaMuYiekOoT0w8R+acNC19fWQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvGTeamMatchingEntry03",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0104;AccountKey=L+zLDdNjNrf2/ALncERJmFaR8I7m0I8V/R+gkWke6O0qF/mjqHs5bqMFAxxBEUIGZRZgOcVSGKVPBjGl1xOz9A==;EndpointSuffix=core.windows.net",
+        "Name": "GvGTeamMatchingEntry04",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0105;AccountKey=w9aqOvqvjpIfh6WkB73CXzxcfjqbaie4XUjWSC7I15tQqeqR6ZbIHSRpGQ3vBM7egMGD5iK4qDbuRe3EumIdVg==;EndpointSuffix=core.windows.net",
+        "Name": "GvGTeamMatchingEntry05",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      }
+    ]
+  },
+  {
+    "Name": "GvGWholePublishing",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0201;AccountKey=rS1ltN3rHvhAx+HZcOvX3O1eItDj6HTnGHrE5V/x3YarClBz+64pQ4CfIzoV/TGcyzT/m+PovjnXcP3FmuyKUg==;EndpointSuffix=core.windows.net",
+        "Name": "GvGWholePublishing01",
+        "NextClusterName": "GvGReady",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0202;AccountKey=8kzrzF2n1y/S2zpaR0FIwI9T027HODd0SQSvdA6BhuaptnWqnKrVlKKlcCFAio6TSAemkxSqUFyhkVl4x0dg1A==;EndpointSuffix=core.windows.net",
+        "Name": "GvGWholePublishing02",
+        "NextClusterName": "GvGReady",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0203;AccountKey=vATRxMCR9Vh086/wsO70kPWGzTQ03N7mhUEy5ERT1am4OVUdYJCTpoA4uihgThgYjOQP0YhTImrdg1yBqjC9gQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvGWholePublishing03",
+        "NextClusterName": "GvGReady",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0204;AccountKey=fp3l/HNIjQKbR943Cpwu66XmGWXcJ1A9JY277Akq7mfDDigPY05YESZVixKhMfMMZPTbCqaHrtRCjBwQ9pRNTw==;EndpointSuffix=core.windows.net",
+        "Name": "GvGWholePublishing04",
+        "NextClusterName": "GvGReady",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0205;AccountKey=k7EAn3YL8qW+8a1txB52CTc7jTojsCD9IGxsAWRBFMtyol1Vu1t9xfWalAPYGOIeGlo1gYOTtopqppneqyWyRA==;EndpointSuffix=core.windows.net",
+        "Name": "GvGWholePublishing05",
+        "NextClusterName": "GvGReady",
+        "DeleteClusterName": ""
+      }
+    ]
+  },
+  {
+    "Name": "GvGReady",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0301;AccountKey=lNldPU04/XqCDDfVPRsP1QaTciKSnbIUN6bZmWm0hidQ5iKuRC5KIlAdGP87yi+vJ9fiM4Jp4pIhtbHw2xfeHg==;EndpointSuffix=core.windows.net",
+        "Name": "GvGReady01",
+        "NextClusterName": "",
+        "DeleteClusterName": "GvGReadyCompleted"
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0302;AccountKey=PDsc6Ahf7zQyKcC11qJVnPBSPv1x37swqI/4vJ2+FCnJEhxsalukixNuxa10aGYxgosLe0isvIAc+cwGHeYq3A==;EndpointSuffix=core.windows.net",
+        "Name": "GvGReady02",
+        "NextClusterName": "",
+        "DeleteClusterName": "GvGReadyCompleted"
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0303;AccountKey=lHdfi+NeHza2Umjw8yx0y+XVzbjIbDHvenL+jWb5IwOrpfnRyuUFzR6jwwRfGHEDOOdl8FInV9OGZw07L7fUyQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvGReady03",
+        "NextClusterName": "",
+        "DeleteClusterName": "GvGReadyCompleted"
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0304;AccountKey=oVt+sUHCzhsh2S7+qBztRWKqPoCQV7eqeJYpsgf5IXqs4AIP7EskCDzNLSFlw770u6qWyN8ZYtuKBP7btmOQTw==;EndpointSuffix=core.windows.net",
+        "Name": "GvGReady04",
+        "NextClusterName": "",
+        "DeleteClusterName": "GvGReadyCompleted"
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0305;AccountKey=sS8/KnYjI5yoycDRwdDCf2BCbJFlRyiNIrOgND/d8w4yGprrfeEA91jqF+cXILpe/xgJZEPPwoeecXlX8O0KmQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvGReady05",
+        "NextClusterName": "",
+        "DeleteClusterName": "GvGReadyCompleted"
+      }
+    ]
+  },
+  {
+    "Name": "GvGReadyCompleted",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0401;AccountKey=RG52qeXd3U3r2Fay8owowlewv4QhpjnUDJaDLKyqRRGmn8s0/joRnJc5MNxJvbS9dRbiSjIA9POMLqPNBOBvWg==;EndpointSuffix=core.windows.net",
+        "Name": "GvGReadyCompleted01",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0402;AccountKey=qM7r23Y9zwA+gJYd0ywvOq+P9iBjapbGTc/LWcmd7iX5JcQB8objx6vXrtKwmW1eP+YQl5fJRPqQhOYgkGfGNQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvGReadyCompleted02",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0403;AccountKey=hT5VL6+gADvDZC7HCAIgZgPJn0VQYchonB9Y84oKSGe4ophg1bjI6FQddo4M/Cf38mz80WADu+KguH/mckJBpA==;EndpointSuffix=core.windows.net",
+        "Name": "GvGReadyCompleted03",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0404;AccountKey=N3rtNSITRL6X6w4IpM26UR55Va1KFD2pVrR2vQ2ToO1jnh8cUAnbhTIOwMlRWgbCC+mtWiUr2iovU43/xtd0lA==;EndpointSuffix=core.windows.net",
+        "Name": "GvGReadyCompleted04",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0405;AccountKey=gBRMxgWovl7fKbI0arE6zny0o7wYOKHN8Z1HgOTsT1BqjATIDM/OV69yiyZJKODVG0ZYRw9V6tuE8GVBqMedlQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvGReadyCompleted05",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      }
+    ]
+  },
+  {
+    "Name": "GvETeamMatchingEntry",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0501;AccountKey=LJ66hr8GTIl0XqUB0hZc0zrPmRFVwjTtFlXCaDHChDJjOT0f0dOM/fAWbJGd4VyjYzWccIX8NNQSNr43cA8HaA==;EndpointSuffix=core.windows.net",
+        "Name": "GvETeamMatchingEntry01",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0502;AccountKey=6HMaLDgXNTdbtAio/pfXdmoSyMts9ARDofBgM/eXUFMb1AJmsoYq/anCeLL+DPL4aZB0gEc1mYFs1qCOfReTcA==;EndpointSuffix=core.windows.net",
+        "Name": "GvETeamMatchingEntry02",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0503;AccountKey=VOzGsmhEjIWlpGMS8/ZBOUDiDOIEUeQHtoghm2KV+VNrbhcmssZgB7c6na/UKTV9ThMnydegL0sWoyzzRM9cqw==;EndpointSuffix=core.windows.net",
+        "Name": "GvETeamMatchingEntry03",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0504;AccountKey=Wx8EUfi7S9qNBiyYg5R+R/LeW2/O5uopAc6E+D3sVOQQKmB6GtX20yY7q71wJ5+gJcAMpjIxw0T6rMGNZDEWww==;EndpointSuffix=core.windows.net",
+        "Name": "GvETeamMatchingEntry04",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0505;AccountKey=NgsrI71CRDNP4JtFkouDEqlA7bpi0Lj+HAdfisvXkKduUGpL8O1yH4rtr4bvcs2MU+ddw0fW7KHx61BAocgevw==;EndpointSuffix=core.windows.net",
+        "Name": "GvETeamMatchingEntry05",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      }
+    ]
+  },
+  {
+    "Name": "GvEWholePublishing",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0601;AccountKey=hJYNcTMT5sGXlI8kiT9ZkzTCorRfb3+q+8ei99s6cPVXmaGLw8jD/+5r1OoYUeUowARAtpCyF/Gi0hHPbOLhKA==;EndpointSuffix=core.windows.net",
+        "Name": "GvEWholePublishing01",
+        "NextClusterName": "GvEReady",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0602;AccountKey=zgAUDkUlQhU4iR2UTfyvOM+d/EblLTFzIG0ldF6Tjbbp6cNtY+QVPVAkF0hq7OCjV0ERunjwKt2d/SbdFN32mQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvEWholePublishing02",
+        "NextClusterName": "GvEReady",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0603;AccountKey=l9b5yT7qW+Ojos6PaiBXyKdqo6PXkwAMIHDmDpLUI1Hi5WIa5DZHUMZhdVLmoIlt3wUbIifdr4EtxQGvsEhvqQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvEWholePublishing03",
+        "NextClusterName": "GvEReady",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0604;AccountKey=s6lGp4jDTYZssWDQvhgA3HKFovM4hsBq9RYOHK8mDKOAuJYdICii3iTHOxJWed3uGH52EjOHIGWZeMt3kbaQlg==;EndpointSuffix=core.windows.net",
+        "Name": "GvEWholePublishing04",
+        "NextClusterName": "GvEReady",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0605;AccountKey=HLLshmKSSshWije/pFDjXURtj044RFJHNeJhLSUrDmaYCvJzu4lO39XawwWlhwCqnovOFN7X1YxhvHgZXJoePA==;EndpointSuffix=core.windows.net",
+        "Name": "GvEWholePublishing05",
+        "NextClusterName": "GvEReady",
+        "DeleteClusterName": ""
+      }
+    ]
+  },
+  {
+    "Name": "GvEReady",
+    "QueueNodes": [
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0701;AccountKey=5bZzYvV2LbrBrrRkticpfWN5+O2DBkiN0WrxgBPrq5epSMBueydblsfTbGfKWZ0dzJeJ6gKD1SoYhMGcBkvEOQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvEReady01",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0702;AccountKey=5VAkjCoUsqSsEaF7524wP3XUFVlFq2wDwpXVAnJJ+Pw42cpyI3LH8LC0tr/ZX2tD9m+u7C4iKCwMirPRzt7YnQ==;EndpointSuffix=core.windows.net",
+        "Name": "GvEReady02",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0703;AccountKey=bEzqHl1L/0DRoEVr9dK75ce7ztCTtqCsdE66zYCq83dlIXo3vb6qV8L7FijjcpwpippSkAlniDZ3RenxnNL7Ow==;EndpointSuffix=core.windows.net",
+        "Name": "GvEReady03",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0704;AccountKey=9hPzJubS7+GPqH0gs/hF6S3tSAbYGS5Ii9Lf7fbBkuUBJkSrBVTkBr4/XnSaPgon4hRr+MWe3CboDGGhKv8b8w==;EndpointSuffix=core.windows.net",
+        "Name": "GvEReady04",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      },
+      {
+        "CloudStorageAccount": "DefaultEndpointsProtocol=https;AccountName=przequeue0705;AccountKey=+Y5GTyOe4a9vwvtvdWCFxEJ5M3MDy2D24FmIIktBGBS9lyjx4rmR1sGz9PBoaIdy9g/kyfUdkJu0jzqDLzuNJg==;EndpointSuffix=core.windows.net",
+        "Name": "GvEReady05",
+        "NextClusterName": "",
+        "DeleteClusterName": ""
+      }
+    ]
+  }
+]

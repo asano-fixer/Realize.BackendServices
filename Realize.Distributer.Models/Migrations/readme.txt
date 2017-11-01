@@ -1,0 +1,7 @@
+﻿Add-Migration -ConfigurationTypeName MaintenanceDbContextConfiguration maintenancedb
+Update-Database -ConfigurationTypeName MaintenanceDbContextConfiguration
+Add-Migration -ConfigurationTypeName MasterDbContextConfiguration mstdb
+Update-Database -ConfigurationTypeName MasterDbContextConfiguration
+
+Update-Database -ConfigurationTypeName UserDbConfiguration -TargetMigration:"201611140033155_mstdb"
+

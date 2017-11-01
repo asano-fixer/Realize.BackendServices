@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Realize.BackendServices.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Realize.BackendServices.Api.Api">
+            <summary>
+            The FabricRuntime creates an instance of this class for each service type instance. 
+            </summary>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Api.CreateServiceInstanceListeners">
+            <summary>
+            Optional override to create listeners (like tcp, http) for this service instance.
+            </summary>
+            <returns>The collection of listeners.</returns>
+        </member>
+        <member name="T:Realize.BackendServices.Api.Controllers.DistributionController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Register(Realize.Distributer.Models.Entities.Requests.Distribution.RegisterRequest)">
+            <summary>
+            配布情報を登録する
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.List(System.Int32)">
+            <summary>
+            配布情報の一覧を取得する
+            </summary>
+            <param name="environmentInfoId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.History(System.Int32)">
+            <summary>
+            配布情報の一覧を取得する（履歴）
+            </summary>
+            <param name="environmentInfoId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Find(System.Int32,System.Int32)">
+            <summary>
+            配布情報を取得する（Id検索）
+            </summary>
+            <param name="environmentInfoId"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Update(Realize.Distributer.Models.Entities.Requests.Distribution.UpdateRequest)">
+            <summary>
+            配布情報を更新する
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Apply(Realize.Distributer.Models.Entities.Requests.Distribution.ApplyRequest)">
+            <summary>
+            配布情報をゲームに反映する
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Delete(Realize.Distributer.Models.Entities.Requests.Distribution.DeleteRequest)">
+            <summary>
+            配布情報を削除する
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Program.Main">
+            <summary>
+            This is the entry point of the service host process.
+            </summary>
+        </member>
+        <member name="T:Realize.BackendServices.Api.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Startup.#ctor(Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="env"></param>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="loggerFactory"></param>
+        </member>
+    </members>
+</doc>
