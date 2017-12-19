@@ -20,59 +20,110 @@
             
             </summary>
         </member>
-        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.#ctor">
+        <member name="F:Realize.BackendServices.Api.Controllers.DistributionController.connectionSettings">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Register(Realize.Distributer.Models.Entities.Requests.Distribution.RegisterRequest)">
+        <member name="F:Realize.BackendServices.Api.Controllers.DistributionController.operationHelper">
             <summary>
-            配布情報を登録する
+            
+            </summary>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.#ctor(Microsoft.Extensions.Options.IOptions{System.Collections.Generic.List{Realize.BackendServices.Core.Models.Entities.Configs.ConnectionSetting}})">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Register(Realize.BackendServices.Core.Models.Entities.Requests.Distribution.RegisterRequest)">
+            <summary>
+            【未確認】配布情報を登録する
             </summary>
             <param name="request"></param>
             <returns></returns>
         </member>
         <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.List(System.Int32)">
             <summary>
-            配布情報の一覧を取得する
+            【未確認】配布情報の一覧を取得する
             </summary>
             <param name="environmentInfoId"></param>
             <returns></returns>
         </member>
         <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.History(System.Int32)">
             <summary>
-            配布情報の一覧を取得する（履歴）
+            【未確認】配布情報の一覧を取得する（履歴）
             </summary>
             <param name="environmentInfoId"></param>
             <returns></returns>
         </member>
         <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Find(System.Int32,System.Int32)">
             <summary>
-            配布情報を取得する（Id検索）
+            【未確認】配布情報を取得する（Id検索）
             </summary>
             <param name="environmentInfoId"></param>
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Update(Realize.Distributer.Models.Entities.Requests.Distribution.UpdateRequest)">
+        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Update(Realize.BackendServices.Core.Models.Entities.Requests.Distribution.UpdateRequest)">
             <summary>
-            配布情報を更新する
+            【未確認】配布情報を更新する
             </summary>
             <param name="request"></param>
             <returns></returns>
         </member>
-        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Apply(Realize.Distributer.Models.Entities.Requests.Distribution.ApplyRequest)">
+        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Apply(Realize.BackendServices.Core.Models.Entities.Requests.Distribution.ApplyRequest)">
             <summary>
-            配布情報をゲームに反映する
+            【未確認】配布情報をゲームに反映する
             </summary>
             <param name="request"></param>
             <returns></returns>
         </member>
-        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Delete(Realize.Distributer.Models.Entities.Requests.Distribution.DeleteRequest)">
+        <member name="M:Realize.BackendServices.Api.Controllers.DistributionController.Delete(Realize.BackendServices.Core.Models.Entities.Requests.Distribution.DeleteRequest)">
             <summary>
-            配布情報を削除する
+            【未確認】配布情報を削除する
             </summary>
             <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Realize.BackendServices.Api.Controllers.MatchmakerController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Realize.BackendServices.Api.Controllers.MatchmakerController.connectionSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Realize.BackendServices.Api.Controllers.MatchmakerController.operationHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.MatchmakerController.#ctor(Microsoft.Extensions.Options.IOptions{System.Collections.Generic.List{Realize.BackendServices.Core.Models.Entities.Configs.ConnectionSetting}})">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.MatchmakerController.Warmingup(Realize.BackendServices.Core.Models.Requests.WarmingupRequest)">
+            <summary>
+            【動作確認済み】マッチメイカーをウォーミングアップする
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.MatchmakerController.HealthCheck(System.Int32)">
+            <summary>
+            【動作確認済み】マッチメイカーをヘルスチェックする
+            </summary>
+            <param name="environmentInfoId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Realize.BackendServices.Api.Controllers.MatchmakerController.QueueCheck(System.Int32)">
+            <summary>
+            キューの数を取得する
+            </summary>
+            <param name="environmentInfoId"></param>
             <returns></returns>
         </member>
         <member name="M:Realize.BackendServices.Api.Program.Main">

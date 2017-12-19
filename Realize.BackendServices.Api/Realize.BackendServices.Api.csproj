@@ -44,8 +44,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Realize.Distributer.Models.Entities\Realize.Distributer.Models.Entities.csproj" />
-    <ProjectReference Include="..\Realize.Distributer.Models\Realize.Distributer.Models.csproj" />
+    <ProjectReference Include="..\Realize.BackendServices.Core\Realize.BackendServices.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

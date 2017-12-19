@@ -1,5 +1,4 @@
-﻿using Realize.Distributer.Models.Repositories;
-using Realize.Utilities;
+﻿using Realize.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -8,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
 
-namespace Realize.Distributer.Models.Services
+namespace Realize.BackendServices.Core.Models.Services
 {
     /// <summary>
     /// サービスの規定クラス

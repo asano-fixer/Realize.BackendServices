@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
+using Realize.BackendServices.Core.Models.Entities.Configs;
 
 namespace Realize.BackendServices.Api
 {
@@ -39,6 +40,8 @@ namespace Realize.BackendServices.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<List<ConnectionSetting>>(this.Configuration.GetSection("ConnectionSettings"));
+
             // Add framework services.
             services.AddMvc();
 

@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configs\ConnectionSetting.cs" />
     <Compile Include="Requests\Distribution\DistributionInfo.cs" />
     <Compile Include="Enums\ConditionType.cs" />
     <Compile Include="Enums\ItemType.cs" />
